@@ -1,0 +1,18 @@
+<article class="html-edit">
+  <h1>Quote Rank</h1>
+  <div>
+    <a [routerLink]="['/home']">Home</a><br>
+    <label class="letra-lila">Edit a new quotable author:</label><br><br>
+  </div>
+
+  <form class="recuadroForm" (submit)="onSubmit()">
+    <div>
+      <label>Name:</label><br>
+      <input type="text" name="name" id="name"  [(ngModel)]="author.name" value="{{author.name}}" required minlength="3"><br><br>
+    </div>
+    <div>
+      <button class="btnEdit" [routerLink]="['/home']">Cancel</button>
+      <input class="btnEdit" type="submit" value="Submit" />
+    </div>
+  </form>
+</article>

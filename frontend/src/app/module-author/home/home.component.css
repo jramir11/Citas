@@ -1,0 +1,39 @@
+.html-home {
+  /*border: 2px solid red;*/
+  width: 300px;
+  margin: 0 auto;
+ }
+
+table, th, td {
+  border:2px solid black;
+}
+
+.letra-lila {
+  color: blueviolet;
+}
+
+.gris-tit-table {
+  background-color:lightgrey;
+  color: white;
+}
+
+.btnCeleste {
+  background-color:lightblue;
+  color: white;
+  margin-left: 5px;
+  width: 70px;
+}
+.btnCafe {
+  background-color:sandybrown;
+  color: white;
+  margin-left: 5px;
+  width: 40px;
+}
+
+table tr:nth-child(even){
+  background-color:white;
+  }
+table tr:nth-child(odd){
+  background-color:darkgray;
+  }
+

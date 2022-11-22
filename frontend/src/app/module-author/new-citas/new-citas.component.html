@@ -1,0 +1,19 @@
+<article class="html-new-citas">
+  <h1>Quote Ranks</h1>
+  <div>
+    <a [routerLink]="['/home']">Home</a><br><br>
+    <label class="letra-lila">Provide a quote by {{this.datosId.name}}</label><br><br>
+  </div>
+
+  <form [formGroup]="formNewComentario" class="recuadroForm" (ngSubmit)="submitNewComentario(id)">
+      <label> Quote: </label>
+      <input class="input-name" type="text" name="quote" formControlName="quote"/><br><br>
+      <!-- <label> Score: </label>
+      <input class="input-name" type="number" name="score" formControlName="score"/> -->
+      <div class="row-button"><br><br>
+          <div>  <button [routerLink]="['/home']"class="btnCeleste" type="submit" value="Cancel" > Cancel </button> </div>
+          <div>  <button class="btnCeleste" type="submit" value="Submit" > Submit</button> </div>
+      </div>
+  </form>
+  <div class="errorMSG">{{mensajeErr}}</div>
+</article>

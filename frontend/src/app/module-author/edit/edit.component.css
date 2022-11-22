@@ -1,0 +1,24 @@
+.html-edit {
+  /*border: 2px solid red;*/
+  width: 300px;
+  margin: 0 auto;
+ }
+
+.recuadroForm {
+  border: 1px solid black;
+  width: 200px;
+  padding-left: 10px;
+  padding: 10px 0px 20px 10px;
+  height: 80px;
+}
+
+.btnEdit {
+  margin-left: 20px;
+  width: 60px;
+  background-color:deepskyblue;
+  color: white;
+}
+
+.letra-lila {
+  color: blueviolet;
+}

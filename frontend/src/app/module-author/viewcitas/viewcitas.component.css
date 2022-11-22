@@ -1,0 +1,57 @@
+.html-view {
+  border: 2px solid red;
+  width: 500px;
+  margin: 0 auto;
+ }
+
+ table, th, td {
+  border:2px solid black;
+}
+
+.ref-superior {
+    /* border: 1px solid red; */
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+      /* display:inline-flex; */
+    width: 350px;
+    height: 30px;
+}
+.gris-tit-table {
+  background-color:lightgrey;
+  color: white;
+}
+
+table tr:nth-child(even){
+  background-color:white;
+  }
+table tr:nth-child(odd){
+  background-color:darkgray;
+  }
+  .letra-lila {
+    color: blueviolet;
+  }
+
+  .btnCafe {
+    background-color:sandybrown;
+    color: white;
+    margin-left: 5px;
+    width: 50px;
+  }
+  .btnVerde {
+    background-color:olivedrab;
+    color: white;
+    margin-left: 5px;
+    width: 50px;
+  }
+  .btnCafeClaro {
+    background-color:burlywood;
+    color: white;
+    margin-left: 5px;
+    width: 50px;
+  }
+  .btn-inferiores {
+    width: 200px;
+    display: flex;
+    
+  }

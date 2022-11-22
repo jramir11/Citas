@@ -1,0 +1,28 @@
+.html-new-citas {
+  /* border: 2px solid red; */
+  width: 300px;
+  margin: 0 auto;
+ }
+
+.recuadroForm {
+  border: 1px solid black;
+  width: 200px;
+  padding: 10px 0px 20px 10px;
+  height: 80px;
+
+}
+
+.btnCeleste {
+  margin-left: 20px;
+  width: 60px;
+  background-color:deepskyblue;
+  color: white;
+}
+.row-button {
+  display: flex;
+  margin-left: 5px;
+}
+
+.letra-lila {
+  color: blueviolet;
+}

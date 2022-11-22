@@ -1,0 +1,30 @@
+<article class="html-view">
+  <h1>Quote Ranks</h1>
+  <div class="ref-superior">
+      <a [routerLink]="['/home']">Home</a>
+      <a [routerLink]="['/newcitas',listCitas._id]">Add a New Quotes</a><br>
+  </div><br>
+  <!-- <form class="recuadroForm" (submit)="onSubmit()"> -->
+      <label class="color-lila">Quotes by {{listCitas.name}}</label><br><br>
+      <table>
+        <thead>
+          <tr class="gris-tit-table">
+            <th>Quote</th>
+            <th>Votes</th>
+            <th>Action Available</th>
+          </tr>
+        </thead>
+
+        <!-- detalle-->
+        <tr *ngFor="let citas of listCitas.quotes">
+          <td class="letra-lila" id="gris-filas-table" [width]="300">{{citas.quote}}</td>
+          <td class="letra-lila" id="gris-filas-table">{{citas.score}}</td>
+          <td id="btn-inferiores">
+            <button class="btnVerde" (click)="upQuotes(citas._id, citas.score+1)">Up</button>
+            <button class="btnCafeClaro" (click)="DownQuotes(citas._id, citas.score-1)">Down</button>
+            <button class="btnCafe" (click)="deleteQuotes(citas._id)">Delete</button>
+          </td>
+        </tr>
+      </table>
+  <!-- </form> -->
+</article>

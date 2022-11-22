@@ -1,0 +1,23 @@
+<article class="html-home">
+  <h1>Quote Ranks</h1>
+  <div>
+    <a [routerLink]="['/newautor']">Add a quotable author</a><br><br>
+    <label class="color-lila">We have quotes by:</label><br><br>
+  </div>
+  <table>
+    <thead>
+      <tr class="gris-tit-table">
+        <th>Author</th>
+        <th>Action Available</th>
+      </tr>
+    </thead>
+    <!-- detalle-->
+    <tr *ngFor="let author of listAuthors">
+      <td class="letra-lila" id="gris-filas-table">{{author.name}}</td>
+      <td>
+        <button class="btnCeleste" [routerLink]="['/viewcitas',author._id]">View</button>
+        <button class="btnCafe" [routerLink]="['/editautor',author._id]">Edit</button>
+      </td>
+    </tr>
+  </table>
+</article>
