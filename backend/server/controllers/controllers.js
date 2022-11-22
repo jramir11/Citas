@@ -60,10 +60,10 @@ module.exports = {
     try {
         const id=req.params.id
         const {quote,score}=req.body
-        const XComentario = new AuthorQuotes();
-        XComentario.quote=quote;
-        XComentario.score=score;
-        const AuthorQuotesSave = await XComentario.save();
+        // const XComentario = new AuthorQuotes();
+        // XComentario.quote=quote;
+        // XComentario.score=score;
+        // const AuthorQuotesSave = await XComentario.save();
         const data=await AuthorQuotes.findOneAndUpdate({_id:id},{$push: {quotes:{quote,score}}},{new:true})
         res.json({message:"sucess",data});
       } catch (error) {res.json({message:"fault",error:error})
